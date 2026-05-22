@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ESPEDeportes</title>
+    <link rel="icon" href="../img/ESPEDeportes/Deportes.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body style="text-align: center; font-family:Arial;">
+
+    <header>
+        <h1>ESPE Deportes</h1>
+    </header>
+
+    <figure style="text-align: center;">
+        <img src="../img/espe.png" alt="Logo Espe" width="200" height="100">
+        <figcaption>Universidad de las Fuerzas Armadas Espe</figcaption>
+    </figure>
+
+    <nav style="background-color: rgb(11, 114, 49);">
+        <a href="../Principal/Angola.html" style="color:aliceblue ; text-decoration:none ; margin-right: 10px;"> <i
+                class="fa-solid fa-house"></i> <!-- Principal -->Página Principal </a>
+        <a href="../pages/ESPEAcademic.html" style="color:aliceblue ; text-decoration:none ; margin-right: 10px;"> <i
+                class="fa-solid fa-graduation-cap"></i> <!-- Academico -->Academico </a>
+        <a href="#" style="color:aliceblue ; text-decoration:none ; margin-right: 10px;"> <i
+                class="fa-solid fa-futbol"></i> <!-- Deportes -->Deportes </a>
+        <a href="../pages/ESPEMarket.html" style="color:aliceblue ; text-decoration:none ; margin-right: 10px;"> <i
+                class="fa-solid fa-cart-shopping"></i> <!-- Carrito -->Market </a>
+        <a href="../pages/ESPEMembers.html" style="color:aliceblue ; text-decoration:none ; margin-right: 10px;"> <i
+                class="fa-solid fa-users"></i> <!-- Miembros -->Members </a>
+        <a href="../index.html" style="color:aliceblue ; text-decoration:none ; margin-right: 10px;"> <i
+                class="fa-solid fa-sign-out-alt"></i> <!-- Salir -->Salir </a>
+    </nav>
+
+    <aside style="background-color: rgba(71, 59, 59, 0.164); margin: 20px; padding: 20px; border-radius: 8px;">
+        <h2>Bienvenido a ESPEDeportes</h2>
+        <i><i class="fa-solid fa-futbol fa-3x"></i></i>
+        <p> No todo es el estudio, el deporte es salud y diversión</p>
+    </aside>
+
+    <hr>
+
+    <details>
+        <summary>Beneficios de usar ESPEDeportes</summary>
+        <p>Participar en actividades deportivas te ayuda a mantener un estilo de vida saludable y a construir relaciones
+            sociales </p>
+
+    </details>
+    <details>
+        <summary>Cuando se inicia la creacion de espacios recreativos </summary>
+        <p>Ni idea son peor que politicos pero dicen que pronto habrá más espacios para practicar deportes </p>
+    </details>
+    <hr>
+
+    <section class="Buscar">
+
+        <!-- Buscar Evento -->
+        <form action="#" method="get">
+
+            <fieldset>
+
+                <legend>Buscar Evento Deportivo</legend>
+
+                <label for="deporte">Deporte:</label>
+
+                <select id="deporte" name="Deporte">
+
+                    <option value="1">Fútbol</option>
+                    <option value="2">Básquet</option>
+                    <option value="3">Ajedrez</option>
+                    <option value="4">Ping Pong</option>
+                    <option value="5">Gym</option>
+
+                </select>
+
+                <br><br>
+
+                <label for="fecha">Fecha:</label>
+
+                <input type="date" id="fecha" name="Fecha">
+
+                <br><br>
+
+                <label for="lugar">Lugar:</label>
+
+                <input type="text" id="lugar" name="Lugar" placeholder="Lugar del evento">
+
+                <br><br>
+
+                <label for="participantes">Participantes:</label>
+
+                <input type="number" id="participantes" name="Participantes" min="1" max="30" placeholder="Cantidad">
+
+                <br><br>
+
+                <button type="submit">Buscar</button>
+
+            </fieldset>
+
+        </form>
+
+        <section style="text-align: center;">
+
+            <!-- Evento 1 -->
+            <div
+                style="background-color: rgba(71, 59, 59, 0.1);
+                    margin: 20px;
+                    padding: 20px;width: 350px; margin: 20px; padding: 20px; display: inline-block; border-radius: 8px;">
+
+                <img src="../img/ESPEDeportes/futbol.jpg" alt="Fútbol" width="200" height="100">
+
+                <h3>Partido de Fútbol 5v5</h3>
+
+                <p>Fútbol | Fecha: 2026-04-28 | 8 participantes</p>
+
+                <p>En la Cancha Principal</p>
+                <progress title="5 participantes" value="50" max="100" id="participantes_futbol" style="width: 200px; height: 20px; 
+            accent-color: rgb(11, 114, 49);"> </progress>
+                <span>50%</span>
+                <br><br>
+
+                <a href="#" style="background-color: green;
+                      color: white;
+                      padding: 10px;
+                      text-decoration: none;">
+
+                    Inscribirse
+
+                </a>
+
+            </div>
+
+            <!-- Evento 2 -->
+            <div
+                style="background-color: rgba(71, 59, 59, 0.1) ;
+                    margin: 20px;
+                    padding: 20px;width: 350px; margin: 20px; padding: 20px; display: inline-block; border-radius: 8px;">
+
+                <img src="../img/ESPEDeportes/basquet.jpg" alt="Básquet" width="200" height="100">
+
+                <h3>Torneo Interfacultades</h3>
+
+                <p>Básquet | Fecha: 2026-04-30 | 12 participantes</p>
+
+                <p>En el Coliseo ESPE</p>
+
+                <progress title="8 participantes" value="80" max="100" id="participantes_basquet"
+                    style="width: 200px; height: 20px; accent-color: rgb(11, 114, 49);"> </progress>
+                <span>80%</span>
+                <br><br>
+
+                <a href="#" style="background-color: green;
+                      color: white;
+                      padding: 10px;
+                      text-decoration: none;">
+
+                    Inscribirse
+
+                    <a href="#" style="background-color: green;
+                      color: white;
+                      padding: 10px;
+                      text-decoration: none;">
+
+                        Inscribirse
+
+                    </a>
+
+            </div>
+
+            <!-- Evento 3 -->
+            <div
+                style="background-color: rgba(71, 59, 59, 0.1);
+                    margin: 20px;
+                    padding: 20px;width: 350px; margin: 20px; padding: 20px; display: inline-block; border-radius: 8px;">
+
+                <img src="../img/ESPEDeportes/Ajedrez.webp" alt="Ajedrez" width="200" height="100">
+
+                <h3>Torneo de Ajedrez</h3>
+
+                <p>Ajedrez | Fecha: 2026-05-02 | 16 participantes</p>
+
+                <p>En la Biblioteca ESPE</p>
+
+                <progress title="3 
+            participantes" value="20" max="100" id="participantes_ajedrez" style="width: 200px; height: 20px; 
+            accent-color: rgb(11, 114, 49);"> </progress>
+                <span>20%</span>
+                <br><br>
+
+                <a href="#" style="background-color: green;
+                      color: white;
+                      padding: 10px;
+                      text-decoration: none;">
+
+                    Inscribirse
+
+                </a>
+
+            </div>
+
+            <!-- Evento 4 -->
+            <div
+                style="background-color: rgba(71, 59, 59, 0.1);
+                    margin: 20px;
+                    padding: 20px;width: 350px; margin: 20px; padding: 20px; display: inline-block; border-radius: 8px;">
+
+                <img src="../img/ESPEDeportes/pingpong.jpg" alt="Ping Pong" width="200" height="100">
+
+                <h3>Campeonato Ping Pong</h3>
+
+                <p>Ping Pong | Fecha: 2026-05-04 | 10 participantes</p>
+
+                <p>En el Área Recreativa</p>
+                <progress title="4 participantes" value="60" max="100" id="participante_pingpong"
+                    style="width: 200px; height: 20px; accent-color: rgb(11, 114, 49);"> </progress>
+                <span>60%</span>
+                <br><br>
+
+                <a href="#" style="background-color: green;
+                      color: white;
+                      padding: 10px;
+                      text-decoration: none;">
+
+                    Inscribirse
+
+                </a>
+
+            </div>
+
+            <!-- Evento 5 -->
+            <div
+                style="background-color: rgba(71, 59, 59, 0.1);
+                    margin: 20px;
+                    padding: 20px;width: 350px; margin: 20px; padding: 20px; display: inline-block; border-radius: 8px;">
+
+                <img src="../img/ESPEDeportes/gym.jpg" alt="Gym" width="200" height="100">
+
+                <h3>Entrenamiento Funcional</h3>
+
+                <p>Gym | Fecha: 2026-05-06 | 20 participantes</p>
+
+                <p>En el Gimnasio ESPE</p>
+                <progress title="7 participantes" value="40" max="100" id="participantes_gym" style="width: 200px; height: 20px; 
+            accent-color: rgb(11, 114, 49);">
+                </progress>
+
+                <span>40%</span>
+
+
+                <br><br>
+                <a href="#" style="background-color: green;
+                      color: white;
+                      padding: 10px;
+                      text-decoration: none;">
+
+                    Inscribirse
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </section>
+
+
+
+    <section class="Subir">
+
+        <!-- Crear Evento -->
+        <form action="#" method="get">
+
+            <fieldset>
+
+                <legend>Crear Nuevo Evento</legend>
+
+                <label for="nuevoDeporte">Deporte:</label>
+
+                <select id="nuevoDeporte" name="NuevoDeporte">
+
+                    <option value="1">Fútbol</option>
+                    <option value="2">Básquet</option>
+                    <option value="3">Ajedrez</option>
+                    <option value="4">Ping Pong</option>
+                    <option value="5">Gym</option>
+
+                </select>
+
+                <br><br>
+
+                <label for="nombreEvento">Nombre:</label>
+
+                <input type="text" id="nombreEvento" name="NombreEvento" placeholder="Nombre del evento">
+
+                <br><br>
+
+                <label for="fechaEvento">Fecha:</label>
+
+                <input type="date" id="fechaEvento" name="FechaEvento">
+
+                <br><br>
+
+                <label for="lugarEvento">Lugar:</label>
+
+                <input type="text" id="lugarEvento" name="LugarEvento" placeholder="Lugar">
+
+                <br><br>
+
+                <label for="imagen">Imagen:</label>
+
+                <input type="file" id="imagen" name="Imagen">
+
+                <br><br>
+
+                <button type="submit">Crear Evento</button>
+
+            </fieldset>
+
+        </form>
+
+    </section>
+
+    <section style="text-align: center; display: inline-block">
+
+        <h3>Acepatación de eventos</h3>
+
+        <table border="1" >
+
+            <tr>
+                <th>Deporte</th>
+                <th>N evento creados</th>
+                <th>N eventos completados</th>
+                <th>Barra</th>
+                <th>%</th>
+            </tr>
+
+            <tr>
+                <td>Futbol</td>
+                <td>20</td>
+                <td>14</td>
+                <td><progress value="70" max="100"></progress></td>
+                <td><span>70%</span></td>
+            </tr>
+
+            <tr>
+                <td>Basquet</td>
+                <td>7</td>
+                <td>6</td>
+                <td><progress value="6" max="7"></progress></td>
+                <td><span>85.7%</span></td>
+            </tr>
+
+            <tr>
+                <td>Ajedrez</td>
+                <td>8</td>
+                <td>5</td>
+                <td><progress value="5" max="8"></progress></td>
+                <td><span>62.5%</span></td>
+            </tr>
+
+            <tr>
+                <td>Ping Pong</td>
+                <td>5</td>
+                <td>3</td>
+                <td><progress value="3" max="5"></progress></td>
+                <td><span>60%</span></td>
+            </tr>
+
+            <tr>
+                <td>Gym</td>
+                <td>4</td>
+                <td>2</td>
+                <td><progress value="2" max="4"></progress></td>
+                <td><span>50%</span></td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+
+    <br><br>
+
+    <footer style="background-color: rgb(11, 114, 49); color: white; padding: 10px;  text-align: center;">
+        <p>&copy; 2026 Espe. Todos los derechos reservados</p>
+        <code> <h2> Creado por Elkin Vera</code>
+            <abbr></abbr>
+    </footer>
+
+</body>
+
+</html>
